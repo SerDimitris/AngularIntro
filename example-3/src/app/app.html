@@ -1,19 +1,19 @@
-<div class="container">
-  <h3>Event bind Example</h3>
-  <app-event-bind-example></app-event-bind-example>
-
-
-  <h3>Welcome Dimitri</h3>
-  <h4>Component Input to Person Table</h4>
-  <div class="d-flex gap-5">
-    <app-person-table [person]="person1"></app-person-table>
-    <app-person-table></app-person-table>
-    <app-person-table [person]="person2"></app-person-table>
-  </div>
-  <h4>{{"@for"}}</h4>
-  <div class="d-flex gap-2 flex-wrap">
-    @for (user of users; track user) {
-      <app-person-table [person]="user"></app-person-table>
-    }
+<div class="container mt-2">
+  <div class="d-flex flex-column gap-2">
+    <nav class="navbar navbar-dark bg-primary justify-content-between">
+      <a class="navbar-brand ms-3 cursor-pointer" role="button" routerLink="">
+        CF - Angular
+      </a>
+    </nav>
+    <div class="d-flex flex-row gap-2">
+      <div class="d-flex flex-column text-nowrap bg-light p-2">
+        <span role="button" routerLink="component-input-example">Component Input Example</span>
+        <span role="button" routerLink="for-directive-example">{{'@for'}} Directive Example</span>
+        <span role="button" routerLink="event-bind-example">Event Bind Example</span>
+      </div>
+      <span class="flex-grow-1 p-2 text-nowrap">
+        <router-outlet></router-outlet>
+      </span>
+    </div>
   </div>
 </div>
