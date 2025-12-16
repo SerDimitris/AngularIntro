@@ -15,6 +15,7 @@ export class ListGroupMenu {
     { text: "@for Derictive Example,", routerLink: "for-directive-example"},
     { text: "Event Bind Example", routerLink: "event-bind-example"},
     { text: "Simple Data Table", routerLink: "simple-datatable"},
-    { text: "Component Output Example", routerLink: "component-output-example"}
+    { text: "Component Output Example", routerLink: "component-output-example"},
+    { text: "Reactive Forms", routerLink: "reactive-forms"}
   ]
 }
